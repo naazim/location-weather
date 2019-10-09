@@ -1,0 +1,21 @@
+$bg-position: -10px;
+
+.n-image-container {
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow: hidden;
+	filter: blur(10px);
+	z-index: -1;
+
+	&__main {
+		margin: $image-spacing-m;
+		display: flex;
+		flex: 1;
+		height: calc(100vh - #{$image-spacing-m * 2});
+	}
+}
